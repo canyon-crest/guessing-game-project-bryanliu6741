@@ -4,6 +4,7 @@
     <title>JavaScript Number Guessing Game</title>
     <script src="script.js" defer></script>
   </head>
+  
   <body>
     <p id="date"></p>
 
@@ -17,11 +18,18 @@
     <h3 id="msg">Select a Level</h3>
     <input type="text" id="guess">
     <button id="guessBtn" disabled>Guess</button>
-    <button id="giveUp" disabled>Give Up</button>
+    <button id="giveUpBtn" disabled>Give Up</button>
 
-    <h3>Stats</h3>
+    <hr>
+
+    <h2>Stats</h2>
     <p id="wins">Total wins: 0</p>
     <p id="avgScore">Average Score: </p>
+
+    <h3>Round Timing</h3>
+    <p id="roundTime">Last round time: 0s</p>
+    <p id="fastest">Fastest round: 0s</p>
+    <p id="avgTime">Average time: 0s</p>
 
     <h3>Leaderboard</h3>
     <ol>
@@ -29,5 +37,13 @@
       <li name="leaderboard">100</li>
       <li name="leaderboard">100</li>
     </ol>
+    <h3>Achievements</h3>
+      <ul id="achievements">
+      <li id="speedDemon">🥇 Speed Demon (Solve under 5 seconds in hard mode!) - Not earned</li>
+      <li id="sharpshooter">🎯 Sharpshooter (One guess only in hard mode!)- Not earned</li>
+      <li id="neverGiveUp">💪 Avid Guesser - Not earned</li>
+
+      
+      <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
   </body>
 </html>
