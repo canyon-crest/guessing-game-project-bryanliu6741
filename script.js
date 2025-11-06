@@ -105,7 +105,7 @@ function makeGuess() {
                 spread: 70,
                 origin: { y: 0.6 }
             });
-            
+
         updateTimers();
         updateScore();
         reset();
@@ -227,19 +227,19 @@ function updateTimers() {
 function checkAchievements(roundTime, score) {
     if (level === "100" && !achievements.speedDemon && roundTime < 5) {
         achievements.speedDemon = true;
-        document.getElementById("speedDemon").textContent = "🥇 Speed Demon – Earned!";
+        document.getElementById("speedDemon").textContent = "🥇 Speed Demon - Earned!";
         alert("Achievement Unlocked: Speed Demon! ⚡");
     }
 
     if (level === "100" && !achievements.sharpshooter && score === 1) {
         achievements.sharpshooter = true;
-        document.getElementById("sharpshooter").textContent = "🎯 Sharpshooter – Earned!";
+        document.getElementById("sharpshooter").textContent = "🎯 Sharpshooter - Earned!";
         alert("Achievement Unlocked: Sharpshooter! 🎯");
     }
 
     if (!achievements.neverGiveUp && scoreArr.length >= 5) {
         achievements.neverGiveUp = true;
-        document.getElementById("neverGiveUp").textContent = "💪 Never Give Up – Earned!";
+        document.getElementById("neverGiveUp").textContent = "💪 Never Give Up - Earned!";
         alert("Achievement Unlocked: Never Give Up! 💪");
     }
 }
